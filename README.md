@@ -68,3 +68,8 @@ Gestionan los cambios en la estructura de la base de datos.
 Entorno virtual (venv/):
 Asegura que las dependencias sean específicas para este proyecto.
 Si tienes dudas sobre alguna parte o necesitas ejemplos, ¡déjamelo saber! 😊
+
+# http://127.0.0.1:5000/apidocs/
+
+# pip install flasgger
+
