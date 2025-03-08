@@ -22,7 +22,16 @@ def create_user(name, email, password):
 
 def login_user(email, password):
     user = User.query.filter_by(email=email).first()
+
     if user and user.check_password(password):
         access_token = create_access_token(identity=user.id)
-        return jsonify(access_token=access_token)
+        return jsonify({
+            "access_token": access_token,
+            "user": {
+                "id": user.id,
+                "name": user.name,
+                "email": user.email
+            }
+        })
+
     return jsonify({"msg": "Credenciales inválidas"}), 401

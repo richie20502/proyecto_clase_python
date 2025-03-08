@@ -75,4 +75,4 @@ Si tienes dudas sobre alguna parte o necesitas ejemplos, ¡déjamelo saber! 😊
 
 # iniciar flask 
 
-flask run
+flask run --host=0.0.0.0 --port=5050
