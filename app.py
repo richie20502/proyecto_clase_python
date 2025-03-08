@@ -4,12 +4,18 @@ from dotenv import load_dotenv
 from flask_cors import CORS
 from flasgger import Swagger
 import os
+from flask_jwt_extended import JWTManager
+
+# Agregar configuración de JWT
+
 
 # Cargar variables de entorno
 load_dotenv()
 
 # Crear instancia de Flask
 app = Flask(__name__)
+app.config['JWT_SECRET_KEY'] = 'clave_super_secreta'  # Cambia esto por una clave segura
+jwt = JWTManager(app)
 CORS(app)
 
 # Configuración de la base de datos

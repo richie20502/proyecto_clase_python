@@ -73,3 +73,6 @@ Si tienes dudas sobre alguna parte o necesitas ejemplos, ¡déjamelo saber! 😊
 
 # pip install flasgger
 
+# iniciar flask 
+
+flask run
