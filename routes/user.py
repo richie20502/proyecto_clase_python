@@ -21,7 +21,7 @@ def index():
 @user_bp.route('/', methods=['POST'])
 def user_store():
     """
-    Crear un usuario
+    Crear un usuariohhghghghghhghghghgghghghghghghgh
     ---
     tags:
       - Usuarios
